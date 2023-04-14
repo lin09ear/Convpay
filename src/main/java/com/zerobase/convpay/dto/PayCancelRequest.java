@@ -3,23 +3,20 @@ package com.zerobase.convpay.dto;
 import com.zerobase.convpay.type.ConvenienceType;
 import com.zerobase.convpay.type.PayMethodType;
 
-public class PayRequest {
-
+public class PayCancelRequest {
     // 결제수단
     PayMethodType payMethodType;
 
     // 편의점 종류
     ConvenienceType convenienceType;
 
-    PayRequest payRequest;
+    // 결제 취소 금액
+    Integer payCancelAmount;
 
-    // 결제 금액
-    Integer payAmount;
-
-    public PayRequest(PayMethodType payMethodType, ConvenienceType convenienceType, Integer payAmount) {
+    public PayCancelRequest(PayMethodType payMethodType, ConvenienceType convenienceType, Integer payCancelAmount) {
         this.payMethodType = payMethodType;
         this.convenienceType = convenienceType;
-        this.payAmount = payAmount;
+        this.payCancelAmount = payCancelAmount;
     }
 
     public PayMethodType getPayMethodType() {
@@ -38,11 +35,11 @@ public class PayRequest {
         this.convenienceType = convenienceType;
     }
 
-    public Integer getPayAmount() {
-        return payAmount;
+    public Integer getPayCancelAmount() {
+        return payCancelAmount;
     }
 
-    public void setPayAmount(Integer payAmount) {
-        this.payAmount = payAmount;
+    public void setPayCancelAmount(Integer payCancelAmount) {
+        this.payCancelAmount = payCancelAmount;
     }
 }
