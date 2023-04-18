@@ -11,6 +11,7 @@ import com.zerobase.convpay.type.PayCancelResult;
 import com.zerobase.convpay.type.PayMethodType;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.stereotype.Service;
 
 public class UserClient {
     public static void main(String[] args) {

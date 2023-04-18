@@ -1,7 +1,13 @@
 package com.zerobase.convpay.service;
 
 import com.zerobase.convpay.dto.PayRequest;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
+
+@Service
+@Primary
 public class DiscountByConvenience implements DiscountInterface{
 
 
