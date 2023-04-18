@@ -2,6 +2,7 @@ package com.zerobase.convpay.dto;
 
 import com.zerobase.convpay.type.ConvenienceType;
 import com.zerobase.convpay.type.PayMethodType;
+import org.springframework.stereotype.Component;
 
 public class PayCancelRequest {
     // 결제수단
